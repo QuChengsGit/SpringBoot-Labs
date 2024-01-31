@@ -48,7 +48,7 @@ public class FileEventPO extends EventPO implements Serializable {
 
     private String workDir;
 
-    private String filename;
+    private String fileName;
 
     private String newFilename;
 

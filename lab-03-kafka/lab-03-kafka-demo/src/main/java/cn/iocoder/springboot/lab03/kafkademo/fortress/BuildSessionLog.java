@@ -17,9 +17,9 @@ public class BuildSessionLog {
 
     public static SessionPO buildSessionLog() {
         SessionPO result = new SessionPO();
-        result.setTenantId("1698872312842764289");
+        result.setTenantId("test_001");
         result.setInstanceId("instance_id_003");
-        result.setSessionId("session_id_001");
+        result.setSessionId("session_id_002");
         result.setSessionType(1);
         result.setSessionProtocol(1);
         LocalDateTime now = LocalDateTime.now();
@@ -29,14 +29,14 @@ public class BuildSessionLog {
         result.setSessionStart(oneWeekAgoInSeconds);
         result.setSessionStop(oneWeekAgoInSeconds);
         result.setOmSource(0);
-        result.setSessionFileSize("156");
+        result.setSessionFileSize("159");
         result.setServerIp("127.0.0.1");
-        result.setServerName("server_name_001");
+        result.setServerName("server_name_002");
         result.setServerUser("server_user");
         result.setServerPort("1001");
         result.setVpcName("vpc_name");
-        result.setClientUser("client_user");
-        result.setClientIp("127.0.0.1");
+        result.setClientUser("client_user_003");
+        result.setClientIp("127.0.0.6");
         result.setClientUname("client_uname");
 
         // 获取当前时间
@@ -57,7 +57,7 @@ public class BuildSessionLog {
 
     public static CharEventPO buildCharEventPO() {
         CharEventPO result = new CharEventPO();
-        result.setTenantId("1732716487692947458");
+        result.setTenantId("test_001");
         // 获取当前时间
         LocalDateTime currentTime = LocalDateTime.now();
 
@@ -69,24 +69,24 @@ public class BuildSessionLog {
 
         result.setTimeStamp(formattedTime);
         result.setEventTime(System.currentTimeMillis()/1000);
-        result.setSessionId("session_id_004");
+        result.setSessionId("session_id_005");
         result.setSessionType(1);
         result.setSessionProtocol(1);
         result.setServerIp("127.0.0.1");
-        result.setServerName("server_name_001");
+        result.setServerName("server_name_002");
         result.setServerUser("server_user");
         result.setVpcName("vpc_name");
-        result.setClientUser("client_user");
-        result.setClientIp("127.0.0.1");
+        result.setClientUser("client_user_003");
+        result.setClientIp("127.0.0.2");
         result.setClientUname("client_uname");
-        result.setCmdLine("ls");
+        result.setCmdLine("pwd");
 
         return result;
     }
 
     public static FileEventPO buildFileEventPO() {
         FileEventPO result = new FileEventPO();
-        result.setTenantId("1732716487692947458");
+        result.setTenantId("test_0001");
         // 获取当前时间
         LocalDateTime currentTime = LocalDateTime.now();
 
@@ -98,17 +98,18 @@ public class BuildSessionLog {
 
         result.setTimeStamp(formattedTime);
         result.setEventTime(System.currentTimeMillis()/1000);
-        result.setSessionId("session_id_004");
+        result.setSessionId("session_id_006");
         result.setSessionType(1);
         result.setSessionProtocol(1);
-        result.setServerIp("127.0.0.1");
+        result.setServerIp("127.0.0.2");
         result.setServerName("server_name_001");
         result.setServerUser("server_user");
         result.setVpcName("vpc_name");
-        result.setClientUser("client_user");
-        result.setClientIp("127.0.0.1");
+        result.setClientUser("client_user_002");
+        result.setClientIp("127.0.0.2");
         result.setClientUname("client_uname");
-        result.setFilename("file_name_002");
+        result.setFileName("file_name_004");
+        result.setWorkDir("workdir");
 
         return result;
     }
